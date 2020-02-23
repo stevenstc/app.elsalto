@@ -15,7 +15,7 @@
 				<div class="panel panel-heading">Login Control Tiempo</div>
 				<div class="panel panel-body">
 					<div style="text-align: center;">
-						<img src="img/photo.jpg" height="250">
+						<img src="img/photo.jpg" width="100%">
 					</div>
 					<p></p>
 					<label>Usuario</label>

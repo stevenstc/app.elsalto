@@ -18,8 +18,8 @@ if(horas<10){horas='0'+ horas;}
 if(minutos<10){minutos='0'+ minutos;}
 if(segundos<10){segundos='0'+ segundos;}
 
-hora= horas+':'+minutos+':'+segundos;
-hora=moment(hora,'HH:mm:ss A').format('LT');
+hora = horas+':'+minutos+':'+segundos;
+hora = moment(hora,'HH:mm:ss A').format('LT');
 
 $('#telefono').prop({'value': hora});
 }
@@ -85,11 +85,12 @@ $('#telefono').prop({'value': hora});
 						   $ver[4];
 			 ?>
 
-			<tr>
+			<tr id=<?php echo '"n'.$ver[0].'"' ?>>
+			
 				<td><?php echo $ver[1] ?></td>
 				<td><?php echo $ver[2] ?></td>
 				<td><?php echo $ver[3] ?></td>
-				<td><?php echo $ver[4] ?></td>
+				<td id=<?php echo '"h'.$ver[0].'"' ?>><?php echo $ver[4] ?></td>
 				<td>
 					<button class="btn btn-warning glyphicon glyphicon-pencil" data-toggle="modal" data-target="#modalEdicion" onclick="agregaform('<?php echo $datos ?>')">
 						

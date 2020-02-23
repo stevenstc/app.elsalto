@@ -28,10 +28,19 @@
 	?>
 
 	
-					<p><button class="btn btn-danger glyphicon glyphicon-remove" 
-					onclick="preguntarSiNo('<?php echo $ver[0] ?>')">
-						
-					Eliminar Historial</button></p>
+		<p>
+			<button class="btn btn-danger glyphicon glyphicon-remove" 
+			onclick="preguntarSiNo('<?php echo $ver[0] ?>')">
+				
+			Eliminar Historial</button>
+		</p>
+		
+		<p>
+			<a href="componentes/output.php" target="_blank">
+				<button class="btn btn-info glyphicon glyphicon-download-alt">
+			 	Descargar reporte en PDF</button>
+			</a>
+				</p>
 
 				
 		<table class="table table-hover table-condensed table-bordered" id="tabladinamica">
